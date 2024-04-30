@@ -6,7 +6,6 @@ import ppl2 from "../assets/img/ppl-1.png";
 import ppl3 from "../assets/img/ppl-2.png";
 // import Artboard from "../assets/img/Artboard.png";
 import bottle2 from "../assets/img/manbottle.jpg";
-import video from "../assets/img/video.png";
 import "../styles/Home.css";
 
 const Home = () => {
@@ -163,7 +162,15 @@ const Home = () => {
           <img src={bottle2} alt="man with a bottle a bottle" />
         </div>
       </div>
-      <img src={video} alt="video image" className="video-image" />
+      {/* =====this is the video tag====   */}
+      <iframe
+        src="https://www.youtube.com/embed/GnSHHTHmocc?si=7jFD3WOl0TigET4D"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
     </div>
   );
 };
