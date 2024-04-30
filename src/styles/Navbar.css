@@ -125,6 +125,11 @@
     padding: 2px;
     margin: 0;
   }
+  .App__navbar-icons p {
+    margin: 0 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
   .App__navbar-icons p img {
     width: 10px;
     height: 10px;
