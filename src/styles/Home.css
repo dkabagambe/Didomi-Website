@@ -599,8 +599,7 @@ iframe {
 }
 
 .pagination span {
-  background-color: white; /* Default color for indicators */
-  border-radius: 50%; /* Making indicators circular */
+  background-color: white;
   width: 20px;
   height: 2px;
   display: inline-block;
