@@ -112,7 +112,8 @@
   .app__navbar {
     width: 100%;
     height: auto;
-    padding: auto 20px;
+    padding: auto 10px;
+    margin: auto 10px;
   }
 
   .app__navbar-logo img {
