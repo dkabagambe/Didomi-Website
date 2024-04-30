@@ -10,6 +10,8 @@ import bottle3 from "../assets/img/bottle3.jpg";
 import "../styles/Home.css";
 
 const Home = () => {
+  // Array to store the number of indicators
+  const indicators = [1, 2, 3, 4];
   return (
     <div className="wrapper">
       {/* ========home section===== */}
@@ -33,7 +35,10 @@ const Home = () => {
         <button className="our-story-btn">our story</button>
       </div>
       {/* =======bottles section=========== */}
-      <div className="image-grid">
+      <div
+        className="image- // Array to store the number of indicators
+  const indicators = [1, 2, 3, 4];grid"
+      >
         <h2>our bottles</h2>
         <div className="image-container">
           <div className="image-item">
@@ -188,6 +193,14 @@ const Home = () => {
         </div>
         <div className="bottle3-right">
           <img src={bottle3} alt="a lady with a bottle" />
+          <div className="pagination">
+            {indicators.map((indicator, index) => (
+              <span
+                key={index}
+                className={index === 0 ? "active" : ""} // Adding "active" class to the first indicator
+              ></span>
+            ))}
+          </div>
         </div>
       </div>
     </div>

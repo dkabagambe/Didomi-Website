@@ -593,3 +593,20 @@ iframe {
     padding-top: 25px;
   }
 }
+.pagination {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pagination span {
+  background-color: white; /* Default color for indicators */
+  border-radius: 50%; /* Making indicators circular */
+  width: 20px;
+  height: 2px;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.pagination span.active {
+  background-color: #eaa441;
+}
