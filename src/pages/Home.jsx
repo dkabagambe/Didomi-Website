@@ -12,6 +12,8 @@ import Partner2 from "../assets/img/sony logo-2.jpg";
 import Partner3 from "../assets/img/sony logo-3.jpg";
 import Partner4 from "../assets/img/sony logo-4.jpg";
 import Partner5 from "../assets/img/sony logo.jpg";
+import Partnerships from "../assets/img/Partnerships.jpg";
+import Story from "../assets/img/Story.jpg";
 import "../styles/Home.css";
 
 const Home = () => {
@@ -242,6 +244,23 @@ const Home = () => {
           <img src={Partner2} alt="Partner 2" className="partner-image" />
           <img src={Partner3} alt="Partner 3" className="partner-image" />
           <img src={Partner4} alt="Partner 4" className="partner-image" />
+        </div>
+      </section>
+      {/* =========PartnershipSection========= */}
+      <section className="partnership-section">
+        <div className="partnership">
+          <img src={Partnerships} alt="Image 1" />
+          <h3>Our Partnerships</h3>
+          <p>
+            Learn More <span>&gt;</span>
+          </p>
+        </div>
+        <div className="partnership">
+          <img src={Story} alt="Image 2" />
+          <h3>Our Story</h3>
+          <p>
+            Learn More <span>&gt;</span>
+          </p>
         </div>
       </section>
     </div>
