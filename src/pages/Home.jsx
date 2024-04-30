@@ -4,7 +4,7 @@ import maji from "../assets/img/Maji Blue.webp";
 import ppl1 from "../assets/img/ppl.png";
 import ppl2 from "../assets/img/ppl-1.png";
 import ppl3 from "../assets/img/ppl-2.png";
-// import Artboard from "../assets/img/Artboard.png";
+import updates from "../assets/img/updates.jpg";
 import bottle2 from "../assets/img/manbottle.jpg";
 import bottle3 from "../assets/img/bottle3.jpg";
 import "../styles/Home.css";
@@ -203,6 +203,31 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <section className="updates">
+        <div className="update">
+          <h2>Our Updates</h2>
+          <p>Learn how your Bottle brings water to people in Africa</p>
+          <button className="discover-btn">Discover More</button>
+        </div>
+        <div className="update">
+          <img src={updates} alt="updates " />
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sedLorem
+            ipsum dolor sit amet, consectetuer adipiscing elit, sed
+          </p>
+          <button className="readmore-btn">Read More</button>
+        </div>
+        <div className="update">
+          <img src={updates} alt="updates " />
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sedLorem
+            ipsum dolor sit amet, consectetuer adipiscing elit, sed
+          </p>
+          <button className="readmore-btn">Read More</button>
+        </div>
+      </section>
     </div>
   );
 };
