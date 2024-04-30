@@ -701,3 +701,43 @@ iframe {
     height: auto;
   }
 }
+/* partner styles */
+
+.partner {
+  margin: 20px 5px;
+  text-align: center;
+  height: auto;
+  width: 100%;
+}
+.partner h2 {
+  color: #3886c7;
+  padding: 20px 0;
+}
+.pattern-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.partner-image {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.partner-image:hover {
+  transform: scale(1.05); /* Enlarge slightly on hover */
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 600px) {
+  .pattern-container {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .partner-image {
+    width: 200px;
+    height: auto;
+    padding: 20px 0;
+  }
+}

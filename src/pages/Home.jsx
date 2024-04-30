@@ -7,6 +7,11 @@ import ppl3 from "../assets/img/ppl-2.png";
 import updates from "../assets/img/updates.jpg";
 import bottle2 from "../assets/img/manbottle.jpg";
 import bottle3 from "../assets/img/bottle3.jpg";
+import Partner1 from "../assets/img/sony logo-1.jpg";
+import Partner2 from "../assets/img/sony logo-2.jpg";
+import Partner3 from "../assets/img/sony logo-3.jpg";
+import Partner4 from "../assets/img/sony logo-4.jpg";
+import Partner5 from "../assets/img/sony logo.jpg";
 import "../styles/Home.css";
 
 const Home = () => {
@@ -226,6 +231,17 @@ const Home = () => {
             ipsum dolor sit amet, consectetuer adipiscing elit, sed
           </p>
           <button className="readmore-btn">Read More</button>
+        </div>
+      </section>
+      {/* ============partners========== */}
+      <section className="partner">
+        <h2>Companies Who Are Reducing Plastic Waste And Making An Impact</h2>
+        <div className="pattern-container">
+          <img src={Partner5} alt="Partner 5" className="partner-image" />
+          <img src={Partner1} alt="Partner 1" className="partner-image" />
+          <img src={Partner2} alt="Partner 2" className="partner-image" />
+          <img src={Partner3} alt="Partner 3" className="partner-image" />
+          <img src={Partner4} alt="Partner 4" className="partner-image" />
         </div>
       </section>
     </div>
