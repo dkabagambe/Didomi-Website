@@ -536,6 +536,7 @@ iframe {
   align-items: center;
   width: 50%;
   padding: 5px;
+  padding-bottom: 40px;
 }
 .bottle3-left > .quote {
   padding: 0;
