@@ -1,0 +1,483 @@
+.home__section {
+  position: static; /* make the image fixed and full screen */
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  min-height: 750px;
+  background-image: url(../assets/img/banner.jpeg);
+  background-size: cover;
+  background-position: top center;
+  z-index: -1;
+  transform: scale(1.5);
+  animation: moveInside 2s forwards ease-in-out;
+}
+.home__section-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  text-align: center;
+  color: ffffff;
+}
+.home__section-content h1 {
+  text-align: center;
+  color: var(--color-white);
+  font-weight: 900px;
+  line-height: 120%;
+  font-size: 120px;
+}
+
+.home__section-content p {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.9;
+  font-family: lato;
+  color: #ffffff;
+}
+@keyframes moveInside {
+  0% {
+    transform: scale(1.2); /* start with a larger scale */
+  }
+  100% {
+    transform: scale(1); /* animate back to the original size */
+  }
+}
+
+.shop-now-btn {
+  background-color: #eaa441;
+  color: whitesmoke;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 150px;
+  height: 60px;
+  left: 50%;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 650px) {
+  .home__section {
+    min-height: 500px;
+  }
+  .home__section-content h1 {
+    font-size: 100px;
+    line-height: 100%;
+  }
+  .home__section-content p {
+    font-size: 18px;
+  }
+  .shop-now-btn {
+    width: 120px;
+    height: 40px;
+  }
+}
+
+.bottle1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  background-color: #3886c7;
+  color: #ffffff;
+  padding: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.bottle1 h3 {
+  font-size: 2.5rem;
+}
+.bottle1 p {
+  font-size: 1.4rem;
+  line-height: 2;
+  text-align: center;
+  width: 75%;
+  font-style: normal;
+}
+.bottle1 p span {
+  font-weight: bold;
+}
+.our-story-btn {
+  align-self: center;
+  background-color: #ffffff;
+  color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 150px;
+  height: 60px;
+  left: 50%;
+  margin-top: 40px;
+}
+
+.image-grid {
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.image-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s;
+  object-fit: cover;
+}
+.image-grid h2 {
+  padding: 2rem;
+  font-family: var(--font-base);
+  text-transform: capitalize;
+  font-size: 20px;
+  color: #007bff;
+}
+.image-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+}
+.image-info h3 {
+  padding: 2rem;
+  font-family: var(--font-base);
+  text-transform: capitalize;
+  font-size: 20px;
+  color: #007bff;
+}
+.image-item:hover img {
+  transform: translateY(-100%);
+}
+
+.image-item:hover .image-info {
+  transform: translateY(0%);
+}
+@media screen and (max-width: 650px) {
+  .bottle1 {
+    height: 350px;
+    padding: 20px;
+  }
+  .bottle1 h3 {
+    font-size: 2rem;
+  }
+  .bottle1 p {
+    width: 100%;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .our-story-btn {
+    width: 120px;
+    height: 40px;
+  }
+  .image-grid {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+
+  .image-container {
+    grid-gap: 10px;
+  }
+}
+/* didomi promise css */
+.didomi-promise {
+  background-color: #eaa441;
+  padding: 20px;
+  color: var(--color-white);
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.didomi-promise h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  padding: 15px;
+}
+
+.didomi-promise p {
+  font-size: 20px;
+}
+.didomi-promise p span {
+  font-weight: bold;
+}
+.didomi-promise1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.didomi-promise2 {
+  flex-basis: 33.33%;
+  margin: 10px;
+}
+
+.didomi-promise2 h3 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.didomi-promise2 p {
+  font-size: 18px;
+}
+
+.our-impact-btn {
+  justify-self: center !important;
+  align-self: center !important;
+  background-color: #ffffff;
+  color: #eaa441;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 150px;
+  height: 60px;
+  left: 50%;
+  margin: 40px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .didomi-promise1 {
+    flex-direction: column;
+  }
+  .didomi-promise2 {
+    margin-bottom: 20px;
+  }
+  .our-impact-btn {
+    width: 120px;
+    height: 40px;
+  }
+}
+
+/* ImpactSection.css */
+/* .impact-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  color: #ffffff;
+  background-color: #3886c7;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.impact-section .text-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.impact-section .text-container > .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 50px;
+  padding: 50px;
+  width: 85%;
+  text-align: center;
+} */
+
+/* .profit-margin {
+  font-size: 20px;
+  font-weight: bold;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 20%;
+} */
+
+/* .profit-margin2 {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  transform: translate(0, -50%);
+  width: 10%;
+  text-align: right;
+}
+
+.diagram-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.pir {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.impact-section,
+.revenue-section,
+.profit-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.impact-title,
+.revenue-title,
+.profit-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.impact-text,
+.revenue-text,
+.profit-text {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.image-section {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.bottle-image {
+  width: 100%;
+  height: 90%;
+  margin: 10px;
+}
+
+.image-section::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.image-section .bottle-image:first-child::after {
+  content: "Revenue";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(0, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.image-section .bottle-image:last-child::after {
+  content: "Profit";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translate(0, -50%);
+  font-size: 18px;
+  font-weight: bold;
+}
+.image-section .bottle-image:first-child {
+  width: 55%; 
+  height: auto;
+  margin: 10px;
+}
+
+.image-section .bottle-image:last-child {
+  padding-top: 20px;
+  width: 45%; 
+  height: auto;
+  margin: 10px;
+}
+
+
+.bottle-image {
+  position: relative;
+}
+
+.bottle-image::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.bottle-image .revenue-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.bottle-image .costs-text {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+} */
+/* bottle2-section styles  */
+
+/* .bottle2-section {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.bottle2-left {
+  width: 50%;
+  padding: 20px;
+}
+.bottle2-left h2 {
+  width: 50%;
+  padding: 20px;
+  color: #dbaa39;
+}
+
+.bottle2-right {
+  width: 50%;
+  padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .bottle2-section {
+    flex-direction: column;
+  }
+  .bottle2-left,
+  .bottle2-right {
+    width: 100%;
+  }
+} */
