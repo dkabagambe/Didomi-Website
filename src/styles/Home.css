@@ -450,9 +450,10 @@
   left: 50%;
   transform: translate(-50%, 0);
 } */
+
 /* bottle2-section styles  */
 
-/* .bottle2-section {
+.bottle2-section {
   display: flex;
   flex-wrap: wrap;
   font-family: "Montserrat Alternates", sans-serif;
@@ -460,26 +461,42 @@
 
 .bottle2-left {
   width: 50%;
-  padding: 20px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
 }
 .bottle2-left h2 {
   width: 50%;
   padding: 20px;
-  color: #dbaa39;
+  color: #eaa441;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-size: 2rem;
 }
-
+.bottle2-left p {
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  font-style: normal;
+}
 .bottle2-right {
   width: 50%;
-  padding: 20px;
+  padding: 5px;
 }
-
 
 @media (max-width: 768px) {
   .bottle2-section {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .bottle2-left,
   .bottle2-right {
     width: 100%;
+    align-items: center;
+    justify-self: center;
   }
-} */
+}

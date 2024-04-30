@@ -5,7 +5,7 @@ import ppl1 from "../assets/img/ppl.png";
 import ppl2 from "../assets/img/ppl-1.png";
 import ppl3 from "../assets/img/ppl-2.png";
 // import Artboard from "../assets/img/Artboard.png";
-// import bottle2 from "../assets/img/manbottle.jpg";
+import bottle2 from "../assets/img/manbottle.jpg";
 import "../styles/Home.css";
 
 const Home = () => {
@@ -146,9 +146,10 @@ const Home = () => {
 
       {/* ========bottle2-section ========*/}
 
-      {/* <div className="bottle2-section">
+      <div className="bottle2-section">
         <div className="bottle2-left">
           <h2>Our Bottles</h2>
+
           <p>
             Our <span> high-quality bottles</span> strike the perfect balance
             between function and aesthetic. They enable{" "}
@@ -160,7 +161,7 @@ const Home = () => {
         <div className="bottle2-right">
           <img src={bottle2} alt="man with a bottle a bottle" />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
