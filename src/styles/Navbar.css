@@ -115,9 +115,14 @@
     padding: auto 10px;
     margin: auto 10px;
   }
-
+  .App__navbar-logo {
+    flex: 0 0 50px;
+    max-width: 80%;
+    padding: 0;
+  }
   .app__navbar-logo img {
-    width: 80px !important;
+    padding: 0px;
+    margin: 0;
   }
   .App__navbar-icons {
     display: flex;
