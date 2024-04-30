@@ -6,7 +6,7 @@ import Frame from "../assets/img/Frame 25.svg";
 import Group from "../assets/img/Group.svg";
 import { Link, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { TbBottle } from "react-icons/tb";
+import { RxCross1 } from "react-icons/rx";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -52,8 +52,8 @@ const Navbar = () => {
           />
           {toggleMenu && (
             <div className="App__navbar-smallscreen-overlay flex__center slide-bottom">
-              <TbBottle
-                color="#F59F1E"
+              <RxCross1
+                color="#007bff"
                 fontSize={32}
                 className="overlay__close"
                 onClick={() => setToggleMenu(false)}

@@ -29,7 +29,7 @@
   margin: 0 1rem;
   cursor: pointer;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 500;
   text-transform: capitalize;
   transition: 0.5s ease;
@@ -89,7 +89,7 @@
 .App__navbar-smallscreen-overlay a {
   list-style: none;
   text-decoration: none;
-  margin: 10px;
+  margin: 18px;
   font-size: 14px;
   font-weight: 500;
   text-transform: capitalize;
