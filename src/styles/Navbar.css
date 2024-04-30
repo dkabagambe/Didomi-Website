@@ -9,12 +9,12 @@
   border-bottom: none;
 }
 .App__navbar-logo {
-  flex: 0 0 100px;
+  flex: 0 0 80px;
   max-width: 100%;
   padding: 52 14;
 }
 .App__navbar-logo img {
-  padding: 52 14;
+  padding: 0px;
 }
 .App__navbar-links {
   flex: 1;
@@ -111,10 +111,29 @@
 }
 @media screen and (max-width: 650px) {
   .app__navbar {
-    padding: 1rem;
+    width: 100%;
+    height: auto;
   }
 
   .app__navbar-logo img {
-    width: 120px;
+    width: 80px !important;
+  }
+  .App__navbar-icons {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    padding: 2px;
+    margin: 0;
+  }
+  .App__navbar-icons p img {
+    width: 10px;
+    height: 10px;
+  }
+  .border-line {
+    width: 2px;
+    height: 10px;
+    font-weight: 500;
+    background-color: #fff; /* adjust the color as needed */
+    margin: 12px 0; /* adjust the margin as needed */
   }
 }
