@@ -1,6 +1,9 @@
 import hope from "../assets/img/HOPE Bottle.webp";
 import day from "../assets/img/New Day Ombre.webp";
 import maji from "../assets/img/Maji Blue.webp";
+import ppl1 from "../assets/img/ppl.png";
+import ppl2 from "../assets/img/ppl-1.png";
+import ppl3 from "../assets/img/ppl-2.png";
 // import Artboard from "../assets/img/Artboard.png";
 // import bottle2 from "../assets/img/manbottle.jpg";
 import "../styles/Home.css";
@@ -77,7 +80,7 @@ const Home = () => {
         </div>
       </div>
       {/* ============didomi promise section================== */}
-      {/* <div className="didomi-promise">
+      <div className="didomi-promise">
         <h2>Didomi Promise</h2>
         <p>
           As part of the Didomi Promise,
@@ -89,20 +92,23 @@ const Home = () => {
         </p>
         <div className="didomi-promise1">
           <div className="didomi-promise2">
+            <img src={ppl1} alt="ppl icon" />
             <h3>60 k</h3>
             <p>People with water access</p>
           </div>
           <div className="didomi-promise2">
-            <h3>6</h3>
+            <img src={ppl2} alt="ppl icon" />
+            <h3>06</h3>
             <p>Countries Impacted</p>
           </div>
           <div className="didomi-promise2">
+            <img src={ppl3} alt="ppl icon" />
             <h3>23</h3>
             <p>Partner Organization</p>
           </div>
         </div>
         <button className="our-impact-btn">our impact</button>
-      </div> */}
+      </div>
       {/* ========the next section========background-color: #88c4f6; */}
 
       {/* <div className="impact-section">

@@ -207,7 +207,9 @@
   width: 100%;
   font-family: "Montserrat Alternates", sans-serif;
 }
-
+.didomi-promise img {
+  padding: 10px;
+}
 .didomi-promise h2 {
   font-size: 3rem;
   text-transform: capitalize;
