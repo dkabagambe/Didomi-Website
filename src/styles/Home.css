@@ -3,11 +3,12 @@
   top: 0;
   left: 0;
   right: 0;
-  width: 100vw;
+  width: 100%;
   min-height: 750px;
   background-image: url(../assets/img/banner.jpeg);
   background-size: cover;
   background-position: top center;
+  background-repeat: no-repeat;
   z-index: -1;
   transform: scale(1.5);
   animation: moveInside 2s forwards ease-in-out;
@@ -39,10 +40,10 @@
 }
 @keyframes moveInside {
   0% {
-    transform: scale(1.2); /* start with a larger scale */
+    transform: scale(1.2);
   }
   100% {
-    transform: scale(1); /* animate back to the original size */
+    transform: scale(1);
   }
 }
 
@@ -63,20 +64,25 @@
 @media screen and (max-width: 650px) {
   .home__section {
     min-height: 500px;
+    width: 100%;
+    background-position: center;
+    transform: scale(1.2);
   }
   .home__section-content h1 {
-    font-size: 100px;
+    font-size: 80px;
     line-height: 100%;
+    font-weight: 600;
   }
   .home__section-content p {
     font-size: 18px;
+    width: 90%;
   }
   .shop-now-btn {
-    width: 120px;
-    height: 40px;
+    width: 100px;
+    height: 50px;
   }
 }
-
+/* styles for the next section */
 .bottle1 {
   display: flex;
   flex-direction: column;
@@ -86,7 +92,7 @@
   width: 100%;
   background-color: #3886c7;
   color: #ffffff;
-  padding: 20px;
+  padding: 20px 5px;
   font-family: "Montserrat Alternates", sans-serif;
 }
 
@@ -117,16 +123,17 @@
   left: 50%;
   margin-top: 40px;
 }
-
+/* new section styles */
 .image-grid {
-  max-width: 900px;
-  margin: 20px auto;
+  width: 100%;
+  margin: 10px auto;
 }
 
 .image-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  width: 100%;
 }
 
 .image-item {
@@ -144,7 +151,7 @@
   padding: 2rem;
   font-family: var(--font-base);
   text-transform: capitalize;
-  font-size: 20px;
+  font-size: 24px;
   color: #007bff;
 }
 .image-info {
@@ -174,16 +181,22 @@
 }
 @media screen and (max-width: 650px) {
   .bottle1 {
-    height: 350px;
+    height: 100%;
     padding: 20px;
   }
   .bottle1 h3 {
-    font-size: 2rem;
+    font-size: 20px;
+    text-align: center;
+    line-height: normal;
   }
   .bottle1 p {
     width: 100%;
     font-size: 22px;
-    line-height: 1.5;
+    line-height: normal;
+    font-weight: 400;
+  }
+  .bottle1 p > span {
+    font-weight: 400;
   }
   .our-story-btn {
     width: 120px;
@@ -261,8 +274,18 @@
   .didomi-promise1 {
     flex-direction: column;
   }
+  .didomi-promise h2 {
+    font-size: 2.2rem;
+  }
+  .didomi-promise2 h3 {
+    font-size: 3rem;
+  }
+
   .didomi-promise2 {
     margin-bottom: 20px;
+  }
+  .didomi-promise img {
+    padding: 15px;
   }
   .our-impact-btn {
     width: 120px;
@@ -488,6 +511,7 @@
 }
 .bottle2-right img {
   object-fit: cover;
+  width: 100%;
 }
 /* the iframe styles for the youtube video */
 iframe {
@@ -508,6 +532,9 @@ iframe {
     width: 100%;
     align-items: center;
     justify-self: center;
+  }
+  .bottle2-right img {
+    object-fit: cover;
   }
 
   iframe {

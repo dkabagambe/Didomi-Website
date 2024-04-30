@@ -42,10 +42,7 @@ const Home = () => {
         <button className="our-story-btn">our story</button>
       </div>
       {/* =======bottles section=========== */}
-      <div
-        className="image- // Array to store the number of indicators
-  const indicators = [1, 2, 3, 4];grid"
-      >
+      <div className="image-grid">
         <h2>our bottles</h2>
         <div className="image-container">
           <div className="image-item">
