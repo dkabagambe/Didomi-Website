@@ -6,6 +6,7 @@ import ppl2 from "../assets/img/ppl-1.png";
 import ppl3 from "../assets/img/ppl-2.png";
 // import Artboard from "../assets/img/Artboard.png";
 import bottle2 from "../assets/img/manbottle.jpg";
+import bottle3 from "../assets/img/bottle3.jpg";
 import "../styles/Home.css";
 
 const Home = () => {
@@ -171,6 +172,24 @@ const Home = () => {
         referrerPolicy="strict-origin-when-cross-origin"
         allowfullscreen
       ></iframe>
+      {/* ========another-section ========*/}
+      <div className="bottle3-section">
+        <div className="bottle3-left">
+          <div className="quote">&ldquo;</div>
+          <p>best bottle i own</p>
+
+          <h6>
+            Buying and owning this bottle was the best decision i’ve ever made.
+            it’s easy to carry, easy to drink out of it, and knowing Didómi’s
+            mission makes it an even better purchase.
+          </h6>
+          <p>Clara M</p>
+          <div className="stars">⭐️⭐️⭐️⭐️⭐️</div>
+        </div>
+        <div className="bottle3-right">
+          <img src={bottle3} alt="a lady with a bottle" />
+        </div>
+      </div>
     </div>
   );
 };
