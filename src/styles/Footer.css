@@ -105,6 +105,11 @@ form .subscribe-btn {
   color: white;
   font-family: lato;
 }
+.footer3 {
+  width: 80%;
+  align-self: center;
+  padding: 30px;
+}
 @media (max-width: 768px) {
   .footer1 {
     flex-direction: column;

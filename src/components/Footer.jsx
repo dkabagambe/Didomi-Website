@@ -58,6 +58,9 @@ const Footer = () => {
           <h6>Track Your Order</h6>
         </div>
       </div>
+      <div className="footer3">
+        <hr />
+      </div>
       <div className="footer2">
         <p>copyright &#169;{new Date().getFullYear()} Didomi</p>
       </div>
