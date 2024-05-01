@@ -106,6 +106,8 @@
   }
   .App__navbar-smallscreen {
     display: flex;
+    align-items: center;
+    padding-right: 20px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -117,7 +119,7 @@
   }
   .App__navbar-logo {
     flex: 0 0 50px;
-    max-width: 80%;
+    width: 70%;
     padding: 0;
   }
   .app__navbar-logo img {
@@ -137,12 +139,12 @@
     text-decoration: none;
   }
   .App__navbar-icons p img {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
   }
   .border-line {
     width: 2px;
-    height: 10px;
+    height: 20px;
     font-weight: 500;
     background-color: #fff; /* adjust the color as needed */
     margin: 12px 0; /* adjust the margin as needed */
