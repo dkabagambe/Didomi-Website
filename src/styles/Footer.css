@@ -1,9 +1,100 @@
-.copyright {
-  height: 2em;
+.footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #3886c7;
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+}
+.footer1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer11 {
+  display: flex;
+  flex-direction: column;
+  flex: 0.4;
+  padding-left: 10px;
+}
+.footer11 img {
+  width: 50%;
+  padding-right: 30px;
+}
+.footer11 p {
+  font-size: 16px;
+  text-align: center;
+  width: 90%;
+  text-align: justify;
+}
+.footer11 form {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 5px;
+}
+
+form .email-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+form .subscribe-btn {
+  background-color: #eaa441;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+form .email-input,
+form .subscribe-btn {
+  border-radius: 0;
+}
+form .email-input {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+form .subscribe-btn {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.footer11 .footer-icons img {
+  width: 25px; /* adjust the width as needed */
+  height: 25px; /* adjust the height as needed */
+  font-size: 18px;
+}
+.footer12 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 0.2;
+  text-align: justify;
+}
+.footer12 h3 {
+  font-size: 20px;
+}
+.footer12 h6 {
+  font-size: 13px;
+}
+.footer2 {
+  height: 100%;
   width: 100%;
   padding: 25px 5px;
 }
-.copyright p {
+.footer2 p {
   padding: 5px 15px;
   font-size: 16px;
   text-align: center;
@@ -13,5 +104,27 @@
   font-weight: 300;
   color: white;
   font-family: lato;
-  background-color: #007bff;
+}
+@media (max-width: 768px) {
+  .footer1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer11 .footer-icons img {
+    width: 80px; /* adjust the width as needed */
+    height: 50px; /* adjust the height as needed */
+    width: 100%;
+  }
+
+  .footer12 {
+    display: flex;
+    width: 100%;
+    text-align: center;
+  }
 }
