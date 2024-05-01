@@ -62,7 +62,7 @@ const Footer = () => {
         <hr />
       </div>
       <div className="footer2">
-        <p>copyright &#169;{new Date().getFullYear()} Didomi</p>
+        <p>Copyright &#169;{new Date().getFullYear()} Didomi</p>
       </div>
     </section>
   );

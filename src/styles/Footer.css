@@ -67,16 +67,15 @@ form .subscribe-btn {
 }
 .footer-icons {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 10px;
+  padding-top: 15px;
 }
 
 .footer11 .footer-icons img {
-  width: 25px; /* adjust the width as needed */
-  height: 25px; /* adjust the height as needed */
-  font-size: 18px;
+  width: 60px;
+  height: 35px;
+  object-fit: cover;
 }
+
 .footer12 {
   display: flex;
   flex-direction: column;
@@ -107,9 +106,10 @@ form .subscribe-btn {
   font-family: lato;
 }
 .footer3 {
-  width: 80%;
+  width: 90%;
   align-self: center;
-  padding: 30px;
+  justify-self: center;
+  margin: 15px;
 }
 @media (max-width: 768px) {
   .footer1 {
@@ -117,20 +117,28 @@ form .subscribe-btn {
     justify-content: center;
     align-items: center;
   }
+  .footer11 form {
+    width: 90%;
+    padding: 20px 0px;
+  }
+
   .footer-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    align-self: center;
+    width: 100%;
+  }
+  .footer11 {
+    flex: 1;
+    padding: 20px;
   }
   .footer11 .footer-icons img {
     width: 80px; /* adjust the width as needed */
-    height: 50px; /* adjust the height as needed */
     width: 100%;
   }
 
   .footer12 {
     display: flex;
     width: 100%;
+    height: 100%;
     text-align: center;
   }
 }
