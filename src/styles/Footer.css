@@ -43,6 +43,7 @@ form .email-input {
   border-radius: 5px;
   border: none;
   width: 200px;
+  outline: none;
 }
 form .subscribe-btn {
   background-color: #eaa441;
