@@ -61,12 +61,18 @@
   margin-top: 40px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .home__section {
     min-height: 500px;
     width: 100%;
     background-position: center;
     transform: scale(1.2);
+  }
+  .home__section-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .home__section-content h1 {
     font-size: 80px;
@@ -270,7 +276,7 @@
   margin: 40px;
   text-align: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .didomi-promise1 {
     flex-direction: column;
   }
@@ -504,6 +510,7 @@
   text-align: center;
   width: 100%;
   font-style: normal;
+  padding: 10px;
 }
 .bottle2-right {
   width: 50%;
@@ -720,7 +727,7 @@ iframe {
   .update p {
     color: #000000;
     font-size: 20px;
-    padding: 0 15px;
+    padding: 10px 15px;
     text-align: center;
     width: 100%;
   }
