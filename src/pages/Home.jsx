@@ -260,6 +260,22 @@ const Home = () => {
           </p>
         </div>
       </section>
+      {/* =====the second lasts section====== */}
+
+      <div className="bottle-image4">
+        <div className="description-column">
+          <p>
+            Design your custom bottle. Simply follow the steps, add your artwork
+            and get creative! It’s easy. It’s fun. And best of all, it’s
+            one-of-a-kind!
+          </p>
+
+          <button className="discover-btn">Discover More</button>
+        </div>
+        <div className="description-column">
+          <img src={hope} alt="Bottle Image" />
+        </div>
+      </div>
     </div>
   );
 };

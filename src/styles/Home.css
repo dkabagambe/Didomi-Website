@@ -713,6 +713,7 @@ iframe {
 }
 @media screen and (max-width: 600px) {
   .updates {
+    width: 100%;
     grid-template-columns: 1fr;
     margin: 15px 5px;
   }
@@ -820,5 +821,82 @@ iframe {
   }
   .partnership p {
     margin-bottom: 20px;
+  }
+}
+/* ====the second last section=========== */
+
+.bottle-image4 {
+  position: relative;
+  background-image: url(../assets/img/manbottle.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.bottle-image4 img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.bottle-image4 p {
+  color: #e1eaf1;
+  font-size: 22px;
+  width: 80%;
+}
+
+.description-column {
+  flex-basis: 40%;
+  margin: 20px 5px;
+  height: 100%;
+}
+
+.description-column img {
+  width: 100%;
+  height: 390px;
+  border-radius: 10px;
+}
+.bottle-image4 .discover-btn {
+  align-self: center;
+  background-color: #eaa441;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 120px;
+  height: 50px;
+  left: 50%;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .bottle-image4 {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .description-column {
+    flex-basis: 100%;
+    width: 100%;
+  }
+  .bottle-image4 p {
+    font-size: 20px;
+    width: 100%;
+  }
+  .description-column img {
+    width: 77%;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
   }
 }
