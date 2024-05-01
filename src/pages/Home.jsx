@@ -274,6 +274,11 @@ const Home = () => {
         </div>
         <div className="description-column">
           <img src={hope} alt="Bottle Image" />
+          <div className="pagination">
+            {indicators.map((indicator, index) => (
+              <span key={index} className={index === 0 ? "active" : ""}></span>
+            ))}
+          </div>
         </div>
       </div>
     </div>
