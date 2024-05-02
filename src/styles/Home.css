@@ -582,8 +582,8 @@
 iframe {
   padding: 0 32px;
   margin: 0;
-  width: 100%;
-  height: 400px;
+  width: 1274px;
+  height: 720px;
 }
 
 @media (max-width: 768px) {
