@@ -295,9 +295,14 @@
 }
 
 .didomi-promise2 p {
-  font-size: 18px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: #fdfdfd;
 }
-
 .our-impact-btn {
   justify-self: center !important;
   align-self: center !important;
@@ -308,12 +313,13 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  width: 150px;
+  width: 193px;
   height: 60px;
   left: 50%;
   margin: 40px;
   text-align: center;
 }
+
 @media (max-width: 600px) {
   .didomi-promise1 {
     flex-direction: column;
