@@ -614,7 +614,6 @@ iframe {
 .bottle3-section {
   display: flex;
   flex-wrap: wrap;
-  font-family: "Montserrat Alternates", sans-serif;
   background-color: #3886c7;
   height: 100%;
   width: 100%;
@@ -631,7 +630,7 @@ iframe {
   padding-bottom: 40px;
 }
 .bottle3-left > .quote {
-  padding: 0;
+  padding: 10;
   color: #eaa441;
   font-size: 5rem;
   font-weight: bolder;
@@ -639,21 +638,30 @@ iframe {
 .bottle3-left > .stars {
   padding: 0;
   color: #eaa441;
-  font-size: 2rem;
+  width: 221px;
+  height: 36px;
 }
+
 .bottle3-left p {
-  font-size: 22px;
-  text-align: center;
-  width: 100%;
+  font-family: "Montserrat";
   font-style: normal;
-  text-transform: capitalize;
-}
-.bottle3-left h6 {
+  font-weight: 400;
   font-size: 24px;
   text-align: center;
   width: 100%;
+  text-transform: capitalize;
+  color: #fdfdfd;
+}
+
+.bottle3-left h6 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 39px;
+  text-align: center;
+  width: 100%;
   font-style: italic;
-  padding: 15px;
+  color: #fdfdfd;
 }
 .bottle3-right {
   width: 50%;
@@ -663,6 +671,7 @@ iframe {
   object-fit: contain;
   width: 100%;
   height: 390px;
+  border-radius: 7px;
 }
 .pagination {
   text-align: left;
@@ -708,7 +717,7 @@ iframe {
 }
 /* styles for the updates */
 .updates {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat";
   margin: 10px 15px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -721,22 +730,39 @@ iframe {
   padding: 10px;
   border: none;
   text-align: center;
-  display: grid;
-  place-items: center;
 }
+
 .update h2 {
   color: #3886c7;
   text-decoration: underline;
   text-transform: capitalize;
-  font-size: 2rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
 }
 .update p {
   color: #000000;
-  font-size: 20px;
-  padding: 0 5px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
   text-align: center;
   width: 90%;
+  margin: 10px;
 }
+
+.update .ps {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #000000;
+}
+
 .update .discover-btn {
   align-self: center;
   background-color: #3886c7;
@@ -755,17 +781,17 @@ iframe {
   align-self: center;
   background-color: #ffffff;
   color: #eaa441;
-  border: none;
-  padding: 10px 20px;
+  padding: 10px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  width: 120px;
-  height: 50px;
+  width: 193px;
+  height: 60px;
   left: 50%;
   margin-top: 40px;
   border: 1px solid #eaa441;
 }
+
 .update h3 {
   color: #3886c7;
   text-decoration: underline;
@@ -792,6 +818,10 @@ iframe {
   .update img {
     width: 100%;
     height: auto;
+  }
+  .update .discover-btn {
+    width: 120px;
+    height: 50px;
   }
 }
 /* partner styles */

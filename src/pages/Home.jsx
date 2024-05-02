@@ -212,7 +212,7 @@ const Home = () => {
         <div className="update">
           <img src={updates} alt="updates " />
           <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>
+          <p className="ps">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sedLorem
             ipsum dolor sit amet, consectetuer adipiscing elit, sed
           </p>
@@ -221,7 +221,7 @@ const Home = () => {
         <div className="update">
           <img src={updates} alt="updates " />
           <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>
+          <p className="ps">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sedLorem
             ipsum dolor sit amet, consectetuer adipiscing elit, sed
           </p>
