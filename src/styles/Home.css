@@ -872,13 +872,15 @@ iframe {
   }
 }
 /* PartnershipSection styles */
+
 .partnership-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 10px;
   width: 100%;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat";
+  font-style: normal;
 }
 
 .partnership {
@@ -928,31 +930,35 @@ iframe {
 
 .bottle-image4 {
   position: relative;
-  background-image: url(../assets/img/manbottle.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/img/manbottle.jpg);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  filter: brightness(0.9);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  font-family: "Montserrat Alternates", sans-serif;
 }
 
 .bottle-image4 img {
-  width: 100%;
-  height: 100%;
+  width: 1263px;
+  height: 584px;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
 }
+
 .bottle-image4 p {
-  color: #e1eaf1;
-  font-size: 22px;
+  color: #fdfdfd;
   width: 80%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
 }
 
 .description-column {
