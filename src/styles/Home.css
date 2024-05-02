@@ -238,6 +238,7 @@
     grid-gap: 10px;
   }
 }
+
 /* didomi promise css */
 .didomi-promise {
   background-color: #eaa441;
@@ -245,23 +246,34 @@
   color: var(--color-white);
   height: 100%;
   width: 100%;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat";
 }
 .didomi-promise img {
   padding: 10px;
+  width: 161px;
+  height: 161px;
 }
 .didomi-promise h2 {
-  font-size: 3rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 120%;
   text-transform: capitalize;
   padding: 15px;
+  color: #fdfdfd;
 }
 
 .didomi-promise p {
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fdfdfd;
+  text-align: center;
+  line-height: 150%;
+  font-family: "Montserrat";
+  font-style: normal;
 }
-.didomi-promise p span {
-  font-weight: bold;
-}
+
 .didomi-promise1 {
   display: flex;
   justify-content: space-between;
@@ -273,8 +285,13 @@
 }
 
 .didomi-promise2 h3 {
-  font-size: 4rem;
-  font-weight: bold;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 117px;
+  color: #fdfdfd;
+  text-align: center;
 }
 
 .didomi-promise2 p {

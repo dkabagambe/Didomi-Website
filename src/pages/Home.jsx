@@ -93,12 +93,8 @@ const Home = () => {
       <div className="didomi-promise">
         <h2>Didomi Promise</h2>
         <p>
-          As part of the Didomi Promise,
-          <span>
-            every bottle provides 10 years of clean, safe and reliable water
-            access
-          </span>
-          to someone in need.
+          As part of the Didomi Promise, every bottle provides 10 years of
+          clean, safe and reliable water access to someone in need.
         </p>
         <div className="didomi-promise1">
           <div className="didomi-promise2">
