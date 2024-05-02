@@ -1,18 +1,20 @@
 .home__section {
   position: static; /* make the image fixed and full screen */
   top: 0;
-  left: 0;
+  left: calc(50% - 1920px / 2);
   right: 0;
   width: 100%;
   min-height: 750px;
-  background-image: url(../assets/img/banner.jpeg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../assets/img/banner.jpeg);
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
   transform: scale(1.5);
   animation: moveInside 2s forwards ease-in-out;
 }
+
 .home__section-content {
   position: absolute;
   top: 50%;
@@ -22,22 +24,29 @@
   color: ffffff;
 }
 .home__section-content h1 {
-  text-align: center;
-  color: var(--color-white);
-  font-weight: 900px;
+  color: #ffffff;
   line-height: 120%;
-  font-size: 120px;
+  font-size: 180px;
+  font-family: "Baloo";
+  font-style: normal;
+  width: 625px;
+  height: 189px;
+  font-weight: 400;
 }
 
 .home__section-content p {
   text-align: center;
   font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.9;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
   font-family: lato;
   color: #ffffff;
+  width: 625px;
+  height: 58px;
+  font-family: "Montserrat";
 }
+
 @keyframes moveInside {
   0% {
     transform: scale(1.2);
@@ -51,16 +60,16 @@
   background-color: #eaa441;
   color: whitesmoke;
   border: none;
-  padding: 10px 20px;
+  padding: 10px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  width: 150px;
+  width: 193px;
   height: 60px;
   left: 50%;
   margin-top: 40px;
+  gap: 10px;
 }
-
 @media screen and (max-width: 600px) {
   .home__section {
     min-height: 500px;
@@ -89,28 +98,39 @@
   }
 }
 /* styles for the next section */
+
 .bottle1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 553px;
   width: 100%;
-  background-color: #3886c7;
+  background: url(../assets/img/water-drop-impact-linda-wright.jpeg), #3886c7;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   color: #ffffff;
   padding: 20px 5px;
-  font-family: "Montserrat Alternates", sans-serif;
 }
 
 .bottle1 h3 {
-  font-size: 2.5rem;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 120%;
+  text-align: center;
+  color: #fdfdfd;
+  font-style: normal;
+  left: calc(50% - 879px / 2 + 0.5px);
 }
 .bottle1 p {
-  font-size: 1.4rem;
-  line-height: 2;
+  font-size: 24px;
+  line-height: 150%;
   text-align: center;
   width: 75%;
   font-style: normal;
+  font-family: "Montserrat";
+  font-weight: 700;
 }
 .bottle1 p span {
   font-weight: bold;
@@ -124,11 +144,12 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  width: 150px;
+  width: 193px;
   height: 60px;
   left: 50%;
   margin-top: 40px;
 }
+
 /* new section styles */
 .image-grid {
   width: 100%;

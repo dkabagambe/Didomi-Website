@@ -8,6 +8,7 @@
   transition: visibility 0.3s cubic-bezier(0, 0, 0.38, 1);
   border-bottom: none;
 }
+
 .App__navbar-logo {
   flex: 0 0 80px;
   max-width: 100%;
